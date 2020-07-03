@@ -1,252 +1,392 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Shubhi Puntambekar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="images/ico.png">
+  <head>
+    <title>Shubhi Puntambekar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="images/ico.png" />
 
-		<script type="text/javascript">
-			function empty() {
-    			var x, y, z, k;
-    			x = document.getElementById("name").value;
-    			y = document.getElementById("email").value;
-    			z = document.getElementById("subject").value;
-    			k = document.getElementById("message").value;
-    			if (x === "" || y === "" || z === "" || k === "") {
-        			alert("Please fill all the fields!");
-        			return false;
-    			};
-			}
-		</script>
-	</head>
-	<body>
+    <script type="text/javascript">
+      function empty() {
+        var x, y, z, k;
+        x = document.getElementById("name").value;
+        y = document.getElementById("email").value;
+        z = document.getElementById("subject").value;
+        k = document.getElementById("message").value;
+        if (x === "" || y === "" || z === "" || k === "") {
+          alert("Please fill all the fields!");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header" class="customScroll">
+      <header>
+        <span class="image avatar"
+          ><img src="images/avatar.jpg" alt="My Avatar"
+        /></span>
+        <h1 id="logo" style="font-size: 1.5em;">
+          <a
+            href="https://www.linkedin.com/in/shubhi-puntambekar-54081a121/"
+            target="_blank"
+            >Shubhi Puntambekar</a
+          >
+        </h1>
+        <p style="font-size: 0.9em;">FULL STACK DEVELOPER</p>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#one" class="active">About</a></li>
+          <li><a href="#two">Things I Can Do</a></li>
+          <li><a href="#three">My Work</a></li>
+          <li><a href="#four">Journey Till Now</a></li>
+          <li><a href="#five">Contact</a></li>
+        </ul>
+      </nav>
+      <footer>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shubhi-puntambekar-54081a121/"
+              target="_blank"
+              class="icon fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
 
-		<!-- Header -->
-			<section id="header" class="customScroll">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="My Avatar" /></span>
-					<h1 id="logo" style="font-size: 1.5em"><a href="https://www.linkedin.com/in/shubhi-puntambekar-54081a121/" target="_blank">Shubhi Puntambekar</a></h1>
-					<p style="font-size: 0.9em">FULL STACK DEVELOPER</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">My Work</a></li>
-						<li><a href="#four">Journey Till Now</a></li>
-						<li><a href="#five">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/shubhi-puntambekar-54081a121/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						
-						<li><a href="https://github.com/shubhipuntambekar" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://twitter.com/ShubhiPun" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UC7eeinlkeSAxCGgui7SQUOg/" target="_blank" class="icon fa-youtube-play"><span class="label">Youtube</span></a></li>
-						
-						<li><a href="#" class="icon fa-rss"><span class="label">Blog</span></a></li>
-					</ul>
-				</footer>
-			</section>
+          <li>
+            <a
+              href="https://github.com/shubhipuntambekar"
+              target="_blank"
+              class="icon fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/ShubhiPun"
+              target="_blank"
+              class="icon fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UC7eeinlkeSAxCGgui7SQUOg/"
+              target="_blank"
+              class="icon fa-youtube-play"
+              ><span class="label">Youtube</span></a
+            >
+          </li>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+          <li>
+            <a href="#" class="icon fa-rss"><span class="label">Blog</span></a>
+          </li>
+        </ul>
+      </footer>
+    </section>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <!-- One -->
+        <section id="one">
+          <div class="container">
+            <header class="major">
+              <h2 style="margin-top: -1em;">Namaste</h2>
+              <p style="font-size: 1.5em;">
+                I'm, <br />A Newbie | A Constant Learner | Love to Build New
+                Things
+                <!--If you need a person to mould into any shape, you're at the right place.-->
+              </p>
+            </header>
+            <p style="text-align: justify;">
+              I'm a learner and I love to develop new and exciting projects on
+              the technologies that I put my hands on. My strong points include
+              logic building and coding. I can also build simple and clean
+              webpages and android mobile applications. Professionally I have an
+              experience of <b>1.8 years</b> as a <b>Software Engineer.</b
+              ><br />
+              <br />Recently I'm trying my hands in contributing to open source
+              projects. I run a blog and update it with the technologies that I
+              learn and the key things which I learn in those technologies. My
+              current interests include Artificial Intelligence and Machine
+              Learning and I'd be glad to start a career in these
+              technologies.<br /><br />
+              This website is my window to the world. Whether you are a friend,
+              a recruiter, a client, or family, you're welcome to have a look at
+              my work or check out my blog. You can find more about me and then
+              get in touch for a chat about your project. Thank you for taking
+              the time to visit.
+            </p>
+          </div>
+        </section>
 
-						<!-- One -->
-							<section id="one">
-								<div class="container">
-									<header class="major">
-										<h2 style="margin-top: -1em">Namaste</h2>
-										<p style="font-size: 1.5em">I'm, <br>A Newbie | A Constant Learner | Love to Build New Things <!--If you need a person to mould into any shape, you're at the right place.-->
-										 </p>
-									</header>
-									<p style="text-align: justify"> I'm a learner and I love to develop new and exciting projects on the technologies that I put my hands on. My strong points include logic building and coding. I can also build simple and clean webpages and android mobile applications. Professionally I have an experience of <b>1.8 years</b> as a <b>Software Engineer.</b><br> <br>Recently I'm trying my hands in contributing to open source projects. I run a blog and update it with the technologies that I learn and the key things which I learn in those technologies. My current interests include Artificial Intelligence and Machine Learning and I'd be glad to start a career in these technologies.<br><br>
-									This website is my window to the world. Whether you are a friend, a recruiter, a client, or family, you're welcome to have a look at my work or check out my blog. You can find more about me and then get in touch for a chat about your project. Thank you for taking the time to visit.
-									</p>
-								</div>
-							</section>
+        <!-- Two -->
+        <section id="two">
+          <div class="container">
+            <h3>Things I Can Do</h3>
+            <p>
+              Since my high school and graduation, I've been working on these
+              technologies to make my hand a perfect one in them. This list will
+              continue to grow with time.
+            </p>
+            <ul class="feature-icons">
+              <li class="fa-code">Java | JavaScript | Node.js</li>
+              <li class="fa-html5">HTML5 | CSS3 | BootStrap | React.JS</li>
+              <li class="fa-android">React Native | Android | Ionic</li>
+              <li class="fa-database">SQL | MongoDB | Firebase</li>
+              <li class="fa-code-fork">Git | Github</li>
+              <li class="fa-book">Read Quora and Stack Overflow</li>
+            </ul>
+          </div>
+        </section>
+        <!-- Three -->
+        <section id="three">
+          <div class="container">
+            <h3>Projects</h3>
+            <p>
+              Here's some of my recent work that I have done and am proud of.
+              With time I will be working more and grow the list of things that
+              I made.
+            </p>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Since my high school and graduation, I've been working on these technologies to make my hand a perfect one in them. This list will continue to grow with time.</p>
-									<ul class="feature-icons">
-										<li class="fa-code">Java | JavaScript | Node.js </li>
-										<li class="fa-html5">HTML5 | CSS3 | BootStrap | React.JS</li>
-										<li class="fa-android">React Native | Android | Ionic</li>
-										<li class="fa-database">SQL | MongoDB | Firebase</li>
-										<li class="fa-code-fork">Git | Github</li>
-										<li class="fa-book">Read Quora and Stack Overflow</li>
+            <div class="project-row">
+              <div class="proj-container">
+                <img
+                  src="images/project1.png"
+                  alt="Avatar"
+                  class="proj-image"
+                />
+                <div class="proj-overlay">
+                  <div>
+                    <p class="proj-text">Food Ordering Application</p>
+                    <p class="proj-text-tech">React Native | Redux</p>
+                  </div>
+                </div>
+              </div>
+              <div class="proj-container">
+                <img
+                  src="images/project2.png"
+                  alt="Avatar"
+                  class="proj-image"
+                />
+                <div class="proj-overlay">
+                  <div>
+                    <p class="proj-text">One More Portfolio</p>
+                    <p class="proj-text-tech">HTML5 | CSS3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-row">
+              <div class="proj-container">
+                <img
+                  src="images/project3.png"
+                  alt="Avatar"
+                  class="proj-image"
+                />
+                <div class="proj-overlay">
+                  <div>
+                    <p class="proj-text">Wholeseller Application</p>
+                    <p class="proj-text-tech">Android | Java</p>
+                  </div>
+                </div>
+              </div>
+              <div class="proj-container">
+                <img
+                  src="images/project4.png"
+                  alt="Avatar"
+                  class="proj-image"
+                />
+                <div class="proj-overlay">
+                  <div>
+                    <p class="proj-text">Medicine e-Commerce Application</p>
+                    <p class="proj-text-tech">Android | Java | SQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-									</ul>
-								</div>
-							</section>
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p>Here's some of my recent work that I have done and am proud of. With time I will be working more and grow the list of things that I made.</p>
+        <!-- Four -->
+        <section id="four">
+          <div class="container">
+            <h3>Timeline</h3>
+            <p>
+              Amongst all the things I experienced, the most humanly and
+              greatest one I ever accomplished is learning to love myself as I
+              am, while understanding that the purpose of life is to become a
+              better human.
+            </p>
+            <div class="timeline">
+              <div class="time-container time-right">
+                <div class="time-content">
+                  <h4>Mentee | Scaler Academy</h4>
+                  <p>August 2019 - Present</p>
+                  <p>
+                    Working on Data Structures and Algorithm skills, Low level
+                    Design, High level design and other core CS Concepts used in
+                    day to day Software Engineering.
+                  </p>
+                </div>
+              </div>
+              <div class="time-container time-right">
+                <div class="time-content">
+                  <h4>Software Engineer | Zensar</h4>
+                  <p>July 2018 - March 2020</p>
+                  <p>
+                    Joined Zensar as my first company, worked there for 1.8
+                    Years and got to learn about IT Ethics, Agile methodologies.
+                    Worked on two projects and got hands dirty while working for
+                    clients. Majorly worked on Insurance and Retail verticals
+                    during my tenure in Zensar.
+                  </p>
+                </div>
+              </div>
+              <div class="time-container time-right">
+                <div class="time-content">
+                  <h4>Intern | Bitbyte Software</h4>
+                  <p>July 2017 - January 2018</p>
+                  <p>
+                    Worked and got trained on Android using Java, Made a
+                    personal project out of the learnings and also worked on a
+                    live project during the time in the internship.
+                  </p>
+                </div>
+              </div>
+              <div class="time-container time-right">
+                <div class="time-content">
+                  <h4>BE | Information Technology</h4>
+                  <p>August 2014 - May 2018</p>
+                  <p>
+                    I have completed my Bachelors of Engineering from Swami
+                    Vivekanand College of Engineering, Indore with Information
+                    Technology. I learnt various subjects that included
+                    Operating Systems, Computer Networks, Information Security,
+                    Database Management System, Object Oriented Analysis and
+                    Design, and Software Development Lifecycle.
+                  </p>
+                </div>
+              </div>
+              <div class="time-container time-right">
+                <div class="time-content">
+                  <h4>Primary Education</h4>
+                  <p>2002 - 2014</p>
+                  <p>
+                    Completed my higher studies from CBSE Board with major
+                    subjects as Physics, Chemistry, Maths and Multimedia and Web
+                    Technology. Since class 8th I developed an interest in
+                    computers and grabbed every opportunity to learn something
+                    new regarding technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-																		
-									<div class="project-row">
-										<div class="proj-container">
-										  <img src="images/project1.png" alt="Avatar" class="proj-image">
-										  <div class="proj-overlay">
-										    <div >
-										    	<p class="proj-text">Food Ordering Application</p>
-										    	<p class="proj-text-tech">React Native | Redux </p>
-										    </div>
-										  </div>
-										</div>
-										<div class="proj-container">
-										  <img src="images/project2.png" alt="Avatar" class="proj-image">
-										  <div class="proj-overlay">
-										    <div >
-										    	<p class="proj-text">One More Portfolio</p>
-										    	<p class="proj-text-tech">HTML5 | CSS3 </p>
-										    </div>
-										  </div>
-										</div>
-										
-									</div>
-									<div class="project-row">
-										<div class="proj-container">
-										  <img src="images/project3.png" alt="Avatar" class="proj-image">
-										  <div class="proj-overlay">
-										    <div >
-										    	<p class="proj-text">Wholeseller Application</p>
-										    	<p class="proj-text-tech">Android | Java </p>
-										    </div>
-										  </div>
-										</div>
-										<div class="proj-container">
-										  <img src="images/project4.png" alt="Avatar" class="proj-image">
-										  <div class="proj-overlay">
-										    <div >
-										    	<p class="proj-text">Medicine e-Commerce Application</p>
-										    	<p class="proj-text-tech">Android | Java | SQL </p>
-										    </div>
-										  </div>
-										</div>
-									</div>
-								</div>
-							</section>
+        <!-- Five -->
+        <section id="five">
+          <div class="container">
+            <h3>Contact Me</h3>
+            <p>
+              Shubhi Puntambekar <br />
+              Contact: +91 9424051980 <br />
+              E-mail id: shubhipun@gmail.com
+            </p>
+            <form
+              method="post"
+              action="https://formspree.io/shubhipun@gmail.com"
+            >
+              <div class="row uniform">
+                <div class="6u 12u(xsmall)">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="6u 12u(xsmall)">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="row uniform">
+                <div class="12u">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+              </div>
+              <div class="row uniform">
+                <div class="12u">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    rows="6"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row uniform">
+                <div class="12u">
+                  <ul class="actions">
+                    <li>
+                      <input
+                        type="submit"
+                        class="special"
+                        value="Send Message"
+                        onclick="return empty()"
+                      />
+                    </li>
+                    <li><input type="reset" value="Reset Form" /></li>
+                    <li>
+                      <a
+                        class="button alt"
+                        href="assets/Shubhi_Resume.pdf"
+                        download="ShubhiPuntambekarResume"
+                        target="_blank"
+                        >Download Resume</a
+                      >
+                    </li>
 
-							<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Timeline</h3>
-									<p>Amongst all the things I experienced, the most humanly and greatest one I ever accomplished is learning to love myself as I am, while understanding that the purpose of life is to become a better human.</p>
-									<div class="timeline">
-										  <div class="time-container time-right">
-										    <div class="time-content">
-										      <h4>Student | Scaler Academy</h4>
-										      <p>August 2019 - Present</p>
-										      <p>Enrolled in Software Development Engineering online certification course. Solving coding problems on daily basis and building strong knowledge in CS.
+                    <input type="hidden" name="_next" value="thankyou.html" />
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
 
-												</p>
-										    </div>
-										  </div>
-										  <div class="time-container time-right">
-										    <div class="time-content">
-										      <h4>Software Engineer | Zensar</h4>
-										      <p>July 2018 - March 2020</p>
-										      <p>Joined Zensar as my first company, worked there for 1.8 Years and got to learn about IT Ethics, Agile methodologies. Worked on two projects and got hands dirty while working for clients. Majorly worked on Insurance and Retail verticals during my tenure in Zensar.</p>
-										    </div>
-										  </div>
-										  <div class="time-container time-right">
-										    <div class="time-content">
-										      <h4>Intern | Bitbyte Software</h4>
-										      <p>July 2017 - January 2018</p>
-										      <p>Worked and got trained on Android using Java, Made a personal project out of the learnings and also worked on a live project during the time in the internship.</p>
-										    </div>
-										  </div>
-										  <div class="time-container time-right">
-										    <div class="time-content">
-										      <h4>BE | Information Technology</h4>
-										      <p>August 2014 - May 2018</p>
-										      <p>I have completed my Bachelors of Engineering from Swami Vivekanand College of Engineering, Indore with Information Technology. I learnt various subjects that included Operating Systems, Computer Networks, Information Security, Database Management System, Object Oriented Analysis and Design, and Software Development Lifecycle.</p>
-										    </div>
-										  </div>
-										  <div class="time-container time-right">
-										    <div class="time-content">
-										      <h4>Primary Education</h4>
-										      <p>2002 - 2014</p>
-										      <p>Completed my higher studies from CBSE Board with major subjects as Physics, Chemistry, Maths and Multimedia and Web Technology. Since class 8th I developed an interest in computers and grabbed every opportunity to learn something new regarding technology.</p>
-										    </div>
-										  </div>
-										</div>
+      <!-- Footer -->
+      <section id="footer">
+        <div class="container">
+          <ul class="copyright">
+            <li>Made with &#x2764; by Shubhi Puntambekar</li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
-								</div>
-							</section>
-
-						<!-- Five -->
-							<section id="five">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>
-										Shubhi Puntambekar <br>
-										Contact: +91 9424051980 <br>
-										E-mail id: shubhipun@gmail.com
-
-									</p>
-									<form method="post" action="https://formspree.io/shubhipun@gmail.com">
-										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="6u 2u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message" onclick="return empty()" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-													<li><a class="button alt" href="assets/Shubhi_Resume.pdf" download="ShubhiPuntambekarResume"  target="_blank">Download Resume</a></li>
-
-													<input type="hidden" name="_next" value="thankyou.html" />
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
-
-						
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>Made with &#x2764; by Shubhi Puntambekar</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8
+      ]><script src="assets/js/ie/respond.min.js"></script
+    ><![endif]-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
-

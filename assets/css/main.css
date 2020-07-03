@@ -2682,6 +2682,14 @@
 	  text-align: center;
 	}
 
+	/* Media queries - Responsive timeline on screens less than 600px wide */
+	@media screen and (max-width: 600px) {
+		.project-row{
+			width: 100%;
+			display: block;			
+		}
+	}
+
 /*Four*/
 /* The actual timeline (the vertical ruler) */
 .timeline {
