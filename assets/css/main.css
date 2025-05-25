@@ -1587,7 +1587,15 @@
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
+		transition: transform 0.3s ease-out, box-shadow 0.3s ease;
 	}
+
+	h1:hover {
+	    transform: scale(1.05);
+		z-index: 2;
+	}
+
+
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border: 0;
@@ -1600,9 +1608,19 @@
 		line-height: 1.5em;
 	}
 
+	h2:hover {
+	    transform: scale(1.05);
+		z-index: 2;
+	}
+
 	h3 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+	}
+
+	h3:hover {
+	    transform: scale(1.05);
+		z-index: 2;
 	}
 
 	h4 {
@@ -1610,14 +1628,29 @@
 		line-height: 1.5em;
 	}
 
+	h4:hover {
+	    transform: scale(1.05);
+		z-index: 2;
+	}
+
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
 	}
 
+	h5:hover {
+	    transform: scale(1.05);
+		z-index: 2;
+	}
+
 	h6 {
 		font-size: 0.7em;
 		line-height: 1.5em;
+	}
+
+	h6:hover {
+	    transform: scale(1.05);
+		z-index: 2;
 	}
 
 	sub {
@@ -1720,6 +1753,11 @@
 	header.major h2 {
 		color: #000000;
 		font-size: 3.5em;
+        background: linear-gradient(90deg, #fff, #000, #fff);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 2s linear 1 backwards, fadeToBlack 0s ease 2.5s forwards;
 	}
 
 		header.major h2 + p {
@@ -2533,6 +2571,12 @@
 					border-top: solid 2px #000000;
 					display: block;
 					padding: 0;
+					transition: transform 0.3s ease, box-shadow 0.3s ease;
+				}
+
+				#header > nav ul li:hover {
+				    transform: scale(1.03);
+					z-index: 2;
 				}
 
 					#header > nav ul li a {
@@ -2610,7 +2654,8 @@
 		display: block;
 		height: 16em;
 		width: 100%;
-		border-bottom: 1.7px solid rgba(50, 119, 119, 0.5) ;
+		animation: bounce 2s ease forwards 2;
+        clip-path: path('M0,240 C300,340 600,140 900,240 C1200,340 1500,140 1800,240 L1800,0 L0,0 Z');
 	}
 
 /*Three*/
@@ -2634,7 +2679,15 @@
 	.proj-container {
 	  position: relative;
 	  width: 100%;
+	  margin: 1.5%;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
+
+    .proj-container:hover {
+        transform: scale(1.05);
+        z-index: 2;
+    }
 
 	.proj-image {
 	  display: block;
@@ -2651,13 +2704,21 @@
 	  height: 100%;
 	  width: 100%;
 	  opacity: 0;
-	  transition: .5s ease;
-	  background-color: #000000;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 80%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-size: 200% 100%;
 	}
 
 	.proj-container:hover .proj-overlay {
 	  cursor: pointer;
 	  opacity: 1;
+	  animation: shine 2s linear 1 backwards;
+	  background-color: black;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.proj-text {
@@ -2765,6 +2826,13 @@
   position: relative;
   border-radius: 6px;
   border: 1px solid #000000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.time-content:hover {
+  transform: scale(1.05);
+  z-index: 2;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -3267,3 +3335,21 @@
 			}
 
 	}
+
+	@keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    @keyframes shine {
+        to { background-position: 200% center; }
+    }
+
+    @keyframes fadeToBlack {
+        to { -webkit-text-fill-color: black; }
+    }
+
+    @keyframes fadeToBlackDiv {
+        to { background-color: black; }
+    }
+}
