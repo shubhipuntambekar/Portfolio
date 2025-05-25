@@ -2141,6 +2141,12 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		ul.icons: hover {
+			transform: scale(1.1);
+			z-index: 2;
 		}
 
 			ul.icons li {
@@ -2571,13 +2577,8 @@
 					border-top: solid 2px #000000;
 					display: block;
 					padding: 0;
-					transition: transform 0.3s ease, box-shadow 0.3s ease;
 				}
 
-				#header > nav ul li:hover {
-				    transform: scale(1.03);
-					z-index: 2;
-				}
 
 					#header > nav ul li a {
 						-moz-transition: none;
